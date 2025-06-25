@@ -38,7 +38,7 @@ const LoginPage = () => {
         return;
       }
 
-      setStatus('Sending OTP...');
+      // setStatus('Sending OTP...');
 
       const res = await fetch('https://cementsathi-backend.onrender.com/api/otp/send', {
         method: 'POST',
