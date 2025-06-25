@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState(null); // optional local status message
 
   useEffect(() => {
     AOS.init({ duration: 700, once: true });
@@ -30,22 +29,20 @@ function ContactPage() {
       const data = await res.json();
 
       if (res.ok) {
-        toast.success('Message sent successfully!');
+        setStatus('Message sent successfully!');
         setForm({ name: '', email: '', message: '' });
       } else {
-        toast.error(`❌ Failed: ${data.error || 'Unknown error'}`);
+        setStatus(data.error || 'Failed to send message.');
       }
     } catch (err) {
-      console.error('❌ Network error:', err);
-      toast.error('❌ Something went wrong. Please try again.');
+      console.error('Network error:', err);
+      setStatus('Something went wrong. Please try again.');
     }
   };
 
   return (
     <div style={{ backgroundColor: '#faf3dd', minHeight: '100vh', padding: '30px 0' }}>
       <div className="container pt-4 pb-5">
-        <ToastContainer position="top-center" autoClose={2500} />
-
         <h2 className="text-center fw-bold mb-2" style={{ fontSize: '2rem', color: '#5c2c2c' }}>
           Contact Us
         </h2>
@@ -96,6 +93,12 @@ function ContactPage() {
                 Send Message
               </button>
             </div>
+
+            {status && (
+              <div className="text-center mt-3 text-info fw-semibold">
+                {status}
+              </div>
+            )}
           </form>
         </div>
       </div>
