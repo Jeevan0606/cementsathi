@@ -1,0 +1,50 @@
+{
+  "Manufacturing": {
+    "definition": "The company or group responsible for producing the cement.",
+    "goodRange": "Top brands ensure consistent quality and standardized processes."
+  },
+  "Grade": {
+    "definition": "Classification of cement based on strength (e.g., OPC 53, PPC).",
+    "goodRange": "OPC 53 and PPC are standard for general and structural use."
+  },
+  "Compressive Strength": {
+    "definition": "Maximum load a cement sample can bear without failure, measured in MPa after 28 days.",
+    "goodRange": "OPC: 53 MPa+, PPC: 45\u201350 MPa"
+  },
+  "Initial Setting Time": {
+    "definition": "Time taken for cement paste to start hardening after mixing with water.",
+    "goodRange": "30\u201345 minutes (IS 269 standard minimum: 30 mins)"
+  },
+  "Final Setting Time": {
+    "definition": "Time taken for the cement to completely set and harden.",
+    "goodRange": "Not more than 600 minutes (10 hours) as per IS standards"
+  },
+  "Fineness (specific surface)": {
+    "definition": "The particle size distribution of cement, affecting rate of hydration and strength gain.",
+    "goodRange": "Above 225 m\u00b2/kg (OPC); higher fineness offers faster strength gain"
+  },
+  "Soundness (Le Chatelier)": {
+  "definition": "Indicates volume stability of cement after setting. Sound cement should not undergo significant expansion.",
+  "goodRange": "≤10 mm (as per IS standards)"
+  },
+  "Bulk Density": {
+    "definition": "Mass per unit volume of cement including voids, measured in kg/m\u00b3.",
+    "goodRange": "Typical range: 1400\u20131500 kg/m\u00b3"
+  },
+  "IS Code Compliance": {
+    "definition": "Indian Standard codes that certify the cement's performance and quality.",
+    "goodRange": "OPC: IS 269, PPC: IS 1489"
+  },
+  "Environment Certification": {
+    "definition": "Sustainability certifications such as GreenPro or ISO 14001.",
+    "goodRange": "Preferred: GreenPro, ISO 14001, or equivalent environmental certifications"
+  },
+  "Ideal For": {
+    "definition": "Common construction applications where the cement is most effective.",
+    "goodRange": "Should match project needs like RCC, Plaster, Foundations, etc."
+  },
+  "New Developments": {
+    "definition": "Recent innovations or proprietary improvements in the cement formula.",
+    "goodRange": "Microfiber tech, fast-setting mix, sulfate resistance, etc."
+  }
+}

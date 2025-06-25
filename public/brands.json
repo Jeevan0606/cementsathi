@@ -1,0 +1,214 @@
+{
+  "lastUpdated": "June 20, 2025, 12:00 PM",
+  "prices": [
+    {
+      "brand": "KCP",
+      "opc": 360,
+      "ppc": 320,
+      "source": "https://cement.kcp.co.in/",
+      "features": [
+        "Manufacturing: KCP Ltd.",
+        "Grade: OPC 53 / OPC 43 / PPC",
+        "Ideal For: Foundations, Slabs, RCC",
+        "New Developments: Low‑heat & marine‑resistant PPC",
+        "Compressive Strength: 53 MPa (OPC 53), 43 MPa (OPC 43)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 14001"
+      ]
+    },
+    {
+      "brand": "Ultratech",
+      "opc": 365,
+      "ppc": 325,
+      "source": "https://www.ultratechcement.com/",
+      "features": [
+        "Manufacturing: Aditya Birla Group",
+        "Grade: OPC 33 / OPC 43 / OPC 53 / PPC",
+        "Ideal For: RCC, Waterproofing, Marine Structures",
+        "New Developments: GreenPro PPC with EPD",
+        "Compressive Strength: ≥53 MPa (OPC 53), ≥43 MPa (OPC 43)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 9001 & ISO 14001"
+        
+      ]
+    },
+    {
+      "brand": "Bharathi",
+      "opc": 365,
+      "ppc": 325,
+      "source": "https://bharathicement.com/",
+      "features": [
+        "Manufacturing: Vicat Group (France)",
+        "Grade: OPC 53 / OPC 43 / PPC",
+        "Ideal For: RCC, Foundations",
+        "New Developments: Advanced particle packing",
+        "Compressive Strength: ≥53 MPa (OPC 53)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: GreenPro Certified"
+        
+      ]
+    },
+    {
+      "brand": "Sri Chakra",
+      "opc": 280,
+      "ppc": 260,
+      "source": "http://srichakracement.com/",
+      "features": [
+        "Manufacturing: Sri Chakra Cement Ltd.",
+        "Grade: PPC (some OPC 53)",
+        "Ideal For: RCC, Slabs",
+        "New Developments: Automated dry-process plant",
+        "Compressive Strength: ≥53 MPa (OPC), ≤44 MPa (PPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 1489‑2015",
+        "Environment Certification: ISO 14001"
+        
+      ]
+    },
+    {
+      "brand": "Maha",
+      "opc": 330,
+      "ppc": 290,
+      "source": "https://www.mahacement.com/",
+      "features": [
+        "Manufacturing: My Home Industries",
+        "Grade: OPC 53 / OPC 43 / PPC",
+        "Ideal For: RCC, Columns",
+        "New Developments: High‑fineness Solid HD+ ranges",
+        "Compressive Strength: ≥50 MPa (OPC), ≥45 MPa (PPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 14001 & GreenPro"
+        
+      ]
+    },
+    {
+      "brand": "Parasakti",
+      "opc": 360,
+      "ppc": 300,
+      "source": "https://parasakticement.com/",
+      "features": [
+        "Manufacturing: Parasakti Cement Industries",
+        "Grade: OPC 53 / OPC 43 / PPC / SRPC",
+        "Ideal For: Coastal & General Construction",
+        "New Developments: Sulphate‑resisting PPC",
+        "Compressive Strength: ≥52 MPa (OPC), ≥46 MPa (PPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 9001 & ISO 14001"
+        
+      ]
+    },
+    {
+      "brand": "Raasi Gold",
+      "opc": 360,
+      "ppc": 320,
+      "source": "https://indiacements.co.in/brands.html",
+      "features": [
+        "Manufacturing: India Cements",
+        "Grade: OPC 53 / PPC",
+        "Ideal For: General Construction",
+        "New Developments: Improved waste-heat PPC",
+        "Compressive Strength: ≥51 MPa (OPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: GreenPro Applied"
+        
+      ]
+    },
+    {
+      "brand": "Ambuja",
+      "opc": 340,
+      "ppc": 300,
+      "source": "https://www.ambujacement.com/",
+      "features": [
+        "Manufacturing: Ambuja Cements Ltd.",
+        "Grade: OPC 53 / PPC",
+        "Compressive Strength: ≥52 MPa (OPC)",
+        "Ideal For: RCC, Flooring, Marine Projects",
+        "New Developments: Low‑carbon PPC",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: GreenPro & ISO certified"
+        
+      ]
+    },
+    {
+      "brand": "Shree",
+      "opc": 330,
+      "ppc": 290,
+      "source": "https://www.shreecement.com/",
+      "features": [
+        "Manufacturing: Shree Cement Ltd.",
+        "Grade: OPC 53 / PPC",
+        "Ideal For: Residential & Commercial Construction",
+        "New Developments: Quick‑set variant",
+        "Compressive Strength: ≥50 MPa (OPC), ≥44 MPa (PPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 14001"
+        
+      ]
+    },
+    {
+      "brand": "Chettinad",
+      "opc": 325,
+      "ppc": 285,
+      "source": "https://www.chettinadcement.com/",
+      "features": [
+        "Manufacturing: Chettinad Cement Corporation",
+        "Grade: OPC 53 / OPC 43 / PPC",
+        "Ideal For: Plastering, RCC, Marine",
+        "New Developments: Dust‑free packing",
+        "Compressive Strength: ≥49 MPa (OPC)",
+        "Fineness (specific surface): ~300 m²/kg",
+        "Bulk Density: ~1440 kg/m³",
+        "Initial Setting Time: ≥30 minutes",
+        "Final Setting Time: ≤600 minutes",
+        "Soundness (Le Chatelier): ≤10 mm",
+        "IS Code Compliance: IS 269‑2015 / IS 1489‑2015",
+        "Environment Certification: ISO 9001 & ISO 14001"
+        
+      ]
+    }
+  ]
+}

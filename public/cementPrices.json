@@ -1,0 +1,17 @@
+{
+  "lastUpdated": "June 19, 2025, 10:30 AM",
+  "prices": [
+    { "brand": "KCP", "opc": 360, "ppc": 320 },
+    { "brand": "Ultratech", "opc": 365, "ppc": 325 },
+    { "brand": "Bharathi", "opc": 365, "ppc": 325 },
+    { "brand": "Sri Chakra", "opc": 280, "ppc": 260 },
+    { "brand": "Maha", "opc": 330, "ppc": 290 },
+    { "brand": "Parasakti", "opc": 360, "ppc": 300 },
+    { "brand": "Raasi Gold", "opc": 360, "ppc": 320 },
+    { "brand": "Ambuja", "opc": 340, "ppc": 300 },
+    { "brand": "Shree", "opc": 330, "ppc": 290 },
+    { "brand": "Chettinad", "opc": 325, "ppc": 285 },
+    { "brand": "Priya", "opc": 320, "ppc": 300 },
+    { "brand": "Suvarna", "opc": 290, "ppc": 270 }
+  ]
+}
