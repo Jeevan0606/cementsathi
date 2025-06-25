@@ -19,7 +19,7 @@ function ContactPage() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://cementsathi-backend.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

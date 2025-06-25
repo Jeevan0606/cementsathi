@@ -9,7 +9,7 @@ function FAQPage() {
 
   useEffect(() => {
     AOS.init({ duration: 600, once: true });
-    fetch('http://localhost:5000/api/faqs')
+    fetch('https://cementsathi-backend.onrender.com/api/faqs')
       .then(res => res.json())
       .then(data => setFaqs(data))
       .catch(err => console.error('Failed to load FAQs:', err));

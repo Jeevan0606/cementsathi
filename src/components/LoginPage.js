@@ -41,7 +41,7 @@ const LoginPage = () => {
       toast.info('Please wait...');
 
       // Send OTP
-      const res = await fetch('http://localhost:5000/api/otp/send', {
+      const res = await fetch('https://cementsathi-backend.onrender.com/api/otp/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),

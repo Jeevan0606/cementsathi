@@ -29,7 +29,7 @@ const OtpPage = () => {
     setSubmitting(true);
 
     try {
-      const res = await fetch('http://localhost:5000/api/otp/verify', {
+      const res = await fetch('https://cementsathi-backend.onrender.com/api/otp/verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp }),
