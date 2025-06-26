@@ -15,6 +15,13 @@ const RegisterPage = () => {
     const auth = getAuth();
     setStatus(null);
 
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{6,}$/;
+
+    if (!passwordRegex.test(password)) {
+      setStatus('❌ Password must be at least 6 characters and include 1 uppercase letter, 1 number, and 1 special character.');
+      return;
+    }
+
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(userCredential.user, { displayName: name });
@@ -65,6 +72,9 @@ const RegisterPage = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
+                  <Form.Text className="text-muted">
+                    Must be at least 6 characters with 1 uppercase, 1 number & 1 special character.
+                  </Form.Text>
                 </Form.Group>
 
                 <Button variant="primary" type="submit" className="w-100">
