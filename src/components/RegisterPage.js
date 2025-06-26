@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Form, Button, Container, Row, Col, Card, Alert } from 'react-bootstrap';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,17 +8,22 @@ const RegisterPage = () => {
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [status, setStatus] = useState(null);
+  const [isPasswordValid, setIsPasswordValid] = useState(false);
   const navigate = useNavigate();
+
+  const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{6,}$/;
+
+  useEffect(() => {
+    setIsPasswordValid(passwordRegex.test(password));
+  }, [password]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const auth = getAuth();
     setStatus(null);
 
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{6,}$/;
-
-    if (!passwordRegex.test(password)) {
-      setStatus('❌ Password must be at least 6 characters and include 1 uppercase letter, 1 number, and 1 special character.');
+    if (!isPasswordValid) {
+      setStatus('❌ Invalid password format.');
       return;
     }
 
@@ -72,9 +77,30 @@ const RegisterPage = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
-                  <Form.Text className="text-muted">
-                    Must be at least 6 characters with 1 uppercase, 1 number & 1 special character.
-                  </Form.Text>
+                  <div
+                    style={{
+                      fontSize: '0.875rem',
+                      marginTop: '6px',
+                      padding: '8px 12px',
+                      borderRadius: '6px',
+                      border: `1px solid ${password === '' ? '#dee2e6' : isPasswordValid ? '#198754' : '#dc3545'}`,
+                      backgroundColor: password === ''
+                        ? '#f8f9fa'
+                        : isPasswordValid
+                        ? '#d1e7dd'
+                        : '#f8d7da',
+                      color: password === ''
+                        ? '#6c757d'
+                        : isPasswordValid
+                        ? '#0f5132'
+                        : '#842029',
+                      transition: 'all 0.3s ease',
+                    }}
+                  >
+                    Password must be <strong>6+ characters</strong> with at least{' '}
+                    <strong>1 uppercase</strong>, <strong>1 number</strong>, and{' '}
+                    <strong>1 special character</strong>.
+                  </div>
                 </Form.Group>
 
                 <Button variant="primary" type="submit" className="w-100">
@@ -83,9 +109,12 @@ const RegisterPage = () => {
               </Form>
 
               {status && (
-                <div className="mt-3 text-center fw-semibold" style={{ color: status.startsWith('✅') ? 'green' : 'red' }}>
+                <Alert
+                  variant={status.startsWith('✅') ? 'success' : 'danger'}
+                  className="mt-3 text-center fw-semibold py-2"
+                >
                   {status}
-                </div>
+                </Alert>
               )}
             </Card>
           </Col>
