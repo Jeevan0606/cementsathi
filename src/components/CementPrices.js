@@ -16,10 +16,11 @@ function CementPrices() {
       .catch(err => console.error("Error fetching prices:", err));
   }, []);
 
-  const getLogoPath = (brand) => {
-    const fileName = brand.toLowerCase().replace(/\s+/g, '-') + '.png';
-    return `/logos/${fileName}`;
-  };
+const getLogoPath = (brand) => {
+  if (!brand) return '/logos/hey.png'; // fallback if brand is undefined/null
+  return `/logos/${brand.toLowerCase().replace(/\s+/g, '-')}.png`;
+};
+
 
   if (!data.prices.length) return <p className="text-center mt-4">Loading prices...</p>;
 
