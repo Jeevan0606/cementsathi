@@ -105,8 +105,10 @@ function Compare() {
                       <img
                         src={`/logos/${brand.brand.toLowerCase().replace(/\s+/g, '-')}.png`}
                         alt={brand.brand}
+                        onError={(e) => { e.target.src = '/logos/kcp.png'; }}
                         style={{ maxHeight: '30px', marginBottom: '4px' }}
                       />
+
                       <br />
                       {brand.brand}
                       {brand.source && (
