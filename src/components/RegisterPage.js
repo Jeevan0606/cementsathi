@@ -79,28 +79,35 @@ const RegisterPage = () => {
                   />
                   <div
                     style={{
-                      fontSize: '0.875rem',
+                      fontSize: '0.85rem',
                       marginTop: '6px',
-                      padding: '8px 12px',
-                      borderRadius: '6px',
-                      border: `1px solid ${password === '' ? '#dee2e6' : isPasswordValid ? '#198754' : '#dc3545'}`,
-                      backgroundColor: password === ''
-                        ? '#f8f9fa'
-                        : isPasswordValid
-                        ? '#d1e7dd'
-                        : '#f8d7da',
-                      color: password === ''
-                        ? '#6c757d'
-                        : isPasswordValid
-                        ? '#0f5132'
-                        : '#842029',
+                      padding: '6px 10px',
+                      borderRadius: '4px',
+                      border: `1px solid ${
+                        password === ''
+                          ? 'transparent'
+                          : isPasswordValid
+                          ? '#198754'
+                          : '#dc3545'
+                      }`,
+                      backgroundColor:
+                        password === ''
+                          ? 'transparent'
+                          : isPasswordValid
+                          ? '#d1e7dd'
+                          : '#f8d7da',
+                      color:
+                        password === ''
+                          ? '#6c757d'
+                          : isPasswordValid
+                          ? '#0f5132'
+                          : '#842029',
                       transition: 'all 0.3s ease',
                     }}
                   >
-                    Password must be <strong>6+ characters</strong> with at least{' '}
-                    <strong>1 uppercase</strong>, <strong>1 number</strong>, and{' '}
-                    <strong>1 special character</strong>.
+                    Password must be strong (6+ chars, 1 uppercase, 1 number, 1 special char).
                   </div>
+
                 </Form.Group>
 
                 <Button variant="primary" type="submit" className="w-100">
