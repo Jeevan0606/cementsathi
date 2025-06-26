@@ -17,11 +17,12 @@ function CementPrices() {
   }, []);
 
   const getLogoPath = (brand) => {
-    const fileName = brand.toLowerCase().replace(/\s+/g, '-') + '.png';
-    return `/logos/${fileName}`;
+    return `/logos/${brand.toLowerCase()}.png`;
   };
 
-  if (!data.prices.length) return <p className="text-center mt-4">Loading prices...</p>;
+  if (!data.prices.length) {
+    return <p className="text-center mt-4">Loading prices...</p>;
+  }
 
   return (
     <div style={{ backgroundColor: '#faf3dd', minHeight: '100vh', padding: '30px 0' }}>
@@ -31,16 +32,14 @@ function CementPrices() {
           Last Updated: {data.lastUpdated}
         </p>
 
-        <div
-          className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-2"
-          data-aos="fade-up"
-        >
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-2" data-aos="fade-up">
           {data.prices.map((item, idx) => (
             <div className="col" key={idx}>
               <div className="card shadow-lg h-100 text-center p-3 hover-shadow">
                 <img
                   src={getLogoPath(item.brand)}
                   alt={item.brand}
+                  onError={(e) => { e.target.src = '/logos/default.png'; }}
                   style={{
                     maxHeight: '50px',
                     objectFit: 'contain',
